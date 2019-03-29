@@ -29,7 +29,7 @@ def turn(board)
     index = input_to_index(gets.chomp)
      if valid_move?(board, index)
        input_valid = true
-       move(board, input)
+       move(board, index)
      else
        puts "invalid"
      end
