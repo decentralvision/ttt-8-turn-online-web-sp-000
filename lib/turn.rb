@@ -27,6 +27,10 @@ def turn(board)
   input_valid = false
   while input_valid == false do
     input = gets.chomp
-    valid_move?(input) ? input_valid = true : puts "invalid"
+     if valid_move?(input)
+       input_valid = true
+     else
+       puts "invalid"
+     end
   end
 end
