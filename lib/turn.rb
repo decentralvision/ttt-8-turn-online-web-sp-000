@@ -27,7 +27,7 @@ def turn(board)
   input_valid = false
   while input_valid == false do
     index = input_to_index(gets.chomp)
-     if valid_move?(index)
+     if valid_move?(board, index)
        input_valid = true
        move(board, input)
      else
