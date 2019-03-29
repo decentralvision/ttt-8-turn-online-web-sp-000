@@ -25,5 +25,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   input_valid = false
-  while input_valid == false {input = gets.chomp valid_move?(input) ? input_valid = true : puts "invalid"}
+  while input_valid == false do
+    input = gets.chomp valid_move?(input) ? input_valid = true : puts "invalid"}
+  end
 end
