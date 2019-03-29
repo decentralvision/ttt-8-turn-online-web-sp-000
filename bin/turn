@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
-
-puts "Please enter 1-9:"
-input_valid = false
-while input_valid == false {input = gets.chomp valid_move?(input) ? input_valid = true : puts "invalid"}
+def turn
+  puts "Please enter 1-9:"
+  input_valid = false
+  while input_valid == false {input = gets.chomp valid_move?(input) ? input_valid = true : puts "invalid"}
+end
