@@ -21,3 +21,9 @@ end
 def move(board, index, current_player = "X")
   board[index] = current_player
 end
+
+def turn(board)
+  puts "Please enter 1-9:"
+  input_valid = false
+  while input_valid == false {input = gets.chomp valid_move?(input) ? input_valid = true : puts "invalid"}
+end
