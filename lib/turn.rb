@@ -30,6 +30,7 @@ def turn(board)
      if valid_move?(board, index)
        input_valid = true
        move(board, index)
+       display_board(board)
      else
        puts "invalid"
      end
